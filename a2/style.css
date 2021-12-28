@@ -1,1 +1,57 @@
 /* Insert your styles here */
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: #f4f1de;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #e07a5f;
+    position: fixed;
+}
+
+.logo{
+   width: 30%;
+   float: left;
+   text-align: center;
+   line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Montserat';
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 35px 10px;
+    margin: 0 1px;
+    font-weight: 600;
+
+}
+nav a:hover{
+    background: #ffffff;
+    color: #3d405b;
+    font-weight: 200;
+}
