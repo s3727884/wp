@@ -13,7 +13,7 @@
 
   <body>
 
-    <div class="top-box">
+    <div class="topbox">
     <header>
       <div class="wrapper">
           <div class="logo">
