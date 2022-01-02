@@ -2,56 +2,144 @@
 *{
     margin:0;
     padding: 0;
-    text-decoration: none;
+    font-family: 'sans-serif', 'Poppins';
 }
-body{
-    background: #f4f1de;
-    font-family: 'Montserrat';
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,10,0.7),rgba(4,9,10,0.7)),url(images/cinema.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.navLinks{
+    flex: 1;
+    text-align: right;
+}
+.navLinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}   
+.navLinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.navLinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navLinks ul li:hover::after{
+    width: 100%;
+    transition: -0.5s;
+}
+
+/* Card Styles */
+
+.now-showing-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
+
+.now-showing-card-wrapper{
+    position: relative;
+    padding: 100px;
+}
+
+.card-front-background{
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.card-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 150px;
+}
+
+.card-text-wrapper .synopsis{
+    transition: 1s;
+    font-weight: 600;
+    font-size: large;
+    color: transparent;
+}
+
+.card-text-wrapper:hover .synopsis{
+    font-weight: 600;
+    font-size: large;
+    color: #fff;
+}
+
+.card-text-wrapper .booking{
+    position: absolute;
+    display: flex;
+    padding-top: 200px;
+    padding-right: 50px;
+}
+
+.card-text-wrapper .booking a{
+    padding: 40px;
+    font-weight: 600;
+    font-size: large;
+    color: transparent
+}
+
+
+.card-text-wrapper:hover .booking a{
+    position: absolute;
+    padding: 20px 80px;
+    border-radius: 60px;
+    background: linear-gradient(to right,#3d405b, #81b29a, #f2cc8f );
+    color:#fff;
+    font-family: "poppins";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+
+}
+
+footer{
     text-align: center;
 }
 
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-}
-
-header{
-    width: 100%;
-    height: 100px;
-    background: #e07a5f;
-    position: fixed;
-}
-
-.logo{
-   width: 30%;
-   float: left;
-   text-align: center;
-   line-height: 100px;
-}
-.logo a{
-    text-decoration: none;
-    font-size: 40px;
-    font-family: 'Montserrat';
-    color: #ffffff;
-    letter-spacing: 2px;
-}
-nav{
-    float: right;
-    line-height: 100px;
-}
-nav a{
-    text-decoration: none;
-    font-family: 'Montserat';
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: #ffffff;
-    padding: 35px 10px;
-    margin: 0 1px;
+.contactInfo{
+    padding: 20px;
     font-weight: 600;
-
-}
-nav a:hover{
-    background: #ffffff;
-    color: #3d405b;
-    font-weight: 200;
+    font-size: large;
 }
