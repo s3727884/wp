@@ -8,7 +8,7 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-    <link id='booking' href="booking.html">
+    <link id='booking' href="booking.php">
     <script src='../wireframe.js'></script>
   </head>
 
@@ -40,7 +40,7 @@
      <div class="content-wrapper">
         <div class="now-showing-wrapper">
           <div class ="now-showing-card-wrapper">
-             <div class="card-front-background" style="background-image:url(../media/movie1.jpg)"></div>
+             <div class="card-front-background" >< img src="../media/movie1.jpg"></div>
               <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1160419%2F&psig=AOvVaw2y_RGhrdYzmV11XmwRFmxa&ust=1641097279670000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLiTl_XZj_UCFQAAAAAdAAAAABAF/ and used for educational purposes only -->
           
              <div class="card-text-wrapper">
