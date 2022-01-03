@@ -17,7 +17,7 @@
     <!--// LOGO and NAV -->
     <section class="header">
       <nav> 
-        <a href="index.php"><img src="images/logo2.png"></a>
+        <a href="index.php"><img src="../media/logo2.png"></a>
         <div class="navLinks">
           <ul>
             <li><a href="index.php">HOME</a></li>
@@ -40,7 +40,7 @@
      <div class="content-wrapper">
         <div class="now-showing-wrapper">
           <div class ="now-showing-card-wrapper">
-             <div class="card-front-background" style="background-image:url(images/movie1.jpg)"></div>
+             <div class="card-front-background" style="background-image:url(../media/movie1.jpg)"></div>
               <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1160419%2F&psig=AOvVaw2y_RGhrdYzmV11XmwRFmxa&ust=1641097279670000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLiTl_XZj_UCFQAAAAAdAAAAABAF/ and used for educational purposes only -->
           
              <div class="card-text-wrapper">
@@ -54,7 +54,7 @@
 
 
          <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(images/movie2.jpg)"></div>
+           <div class="card-front-background" style="background-image:url(../media/movie2.jpg)"></div>
              <!-- Creative Commons image sourced from https://https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt12889404%2F&psig=AOvVaw2TVjqTOBkMYRmL-UUoTA_w&ust=1641097550591000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCICHrvfaj_UCFQAAAAAdAAAAABADand used for educational purposes only -->
           
            <div class="card-text-wrapper">
@@ -67,7 +67,7 @@
 
 
          <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(images/movie3.jpg)"></div>
+           <div class="card-front-background" style="background-image:url(../media/movie3.jpg)"></div>
              <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt10872600%2F&psig=AOvVaw0Zr31mfK_jPG1IBIV8BGOr&ust=1641097752131000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNDFotfbj_UCFQAAAAAdAAAAABAD used for educational purposes only -->
           
             <div class="card-text-wrapper">
@@ -80,7 +80,7 @@
 
 
          <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(images/movie4.jpg)"></div>
+           <div class="card-front-background" style="background-image:url(../media/movie4.jpg)"></div>
              <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt11628854%2F&psig=AOvVaw2_vRqPQBVXsXuI43TaWyeM&ust=1641098029336000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIDP1dzcj_UCFQAAAAAdAAAAABAD used for educational purposes only -->
           
            <div class="card-text-wrapper">
