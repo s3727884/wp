@@ -18,8 +18,8 @@
           <a href="index.html"><img src="images/logo2.png"></a>
           <div class="navLinks">
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="booking.html">BOOKINGS</a></li>
+              <li><a href="index.php">HOME</a></li>
+              <li><a href="booking.php">BOOKINGS</a></li>
               <li><a href="#">ABOUT</a></li>
               <li><a href="#nowShowing">NOW SHOWING</a></li>
               <li><a href="#seatsPricing">SEATS & PRICING</a></li>
