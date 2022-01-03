@@ -17,7 +17,7 @@
     <!--// LOGO and NAV -->
     <section class="header">
       <nav> 
-        <a href="index.php"><img src="../../media/logo2.png"></a>
+        <a href="index.php"><img src="../../media/Logo2.png"></a>
         <div class="navLinks">
           <ul>
             <li><a href="index.php">HOME</a></li>
