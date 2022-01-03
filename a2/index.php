@@ -17,11 +17,11 @@
     <!--// LOGO and NAV -->
     <section class="header">
       <nav> 
-        <a href="index.html"><img src="images/logo2.png"></a>
+        <a href="index.php"><img src="images/logo2.png"></a>
         <div class="navLinks">
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="booking.html">BOOKINGS</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="booking.php">BOOKINGS</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#nowShowing">NOW SHOWING</a></li>
             <li><a href="#seatsPricing">SEATS & PRICING</a></li>
@@ -46,7 +46,7 @@
              <div class="card-text-wrapper">
                 <div class="synopsis">A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.</div>
                     <div class="booking">
-                      <a href= "booking.html">Book Now</a>
+                      <a href= "booking.php">Book Now</a>
                     </div>
              </div>
            </div>
@@ -60,7 +60,7 @@
            <div class="card-text-wrapper">
                 <div class="synopsis">A man ahead of his time, Cyrano de Bergerac dazzles whether with ferocious wordplay at a verbal joust or with brilliant swordplay in a duel. But, convinced that his appearance renders him unworthy of the love of a devoted friend, the luminous Roxanne, Cyrano has yet to declare his feelings for her and Roxanne has fallen in love, at first sight, with Christian.</div>
                     <div class="booking">
-                        <a href= "booking.html">Book Now</a>
+                        <a href= "booking.php">Book Now</a>
                    </div>
             </div>
          </div>
@@ -73,7 +73,7 @@
             <div class="card-text-wrapper">
                <div class="synopsis">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</div>
                    <div class="booking">
-                       <a href= "booking.html">Book Now</a>
+                       <a href= "booking.php">Book Now</a>
                    </div>
            </div>
           </div>
@@ -86,7 +86,7 @@
            <div class="card-text-wrapper">
                 <div class="synopsis">Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school friends and their spouses. It is gradually revealed that there is an imminent environmental catastrophe and that this dinner will be their last night alive.</div>
                     <div class="booking">
-                        <a href= "booking.html">Book Now</a>
+                        <a href= "booking.php">Book Now</a>
                     </div>
            </div>
           </div>
