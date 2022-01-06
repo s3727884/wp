@@ -8,131 +8,213 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-    <link id='booking' href="booking.php">
     <script src='../wireframe.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link id="booking" href="booking.html">
   </head>
 
-  <body>
-
+<body>
     <!--// LOGO and NAV -->
     <section class="header">
-      <nav> 
-        <a href="index.php"><img src="../../media/Logo2.png"></a>
-        <div class="navLinks">
-          <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="booking.php">BOOKINGS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#nowShowing">NOW SHOWING</a></li>
-            <li><a href="#seatsPricing">SEATS & PRICING</a></li>
-            <li><a href="#contactInfo">CONTACT US</a></li>
-          </ul>
+        <nav>
+            <a href ="index.html"><img src="images/Logo2.png" class="logo"></a>
+            <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="booking.html">BOOKINGS</a></li>
+                <li><a href="#nowshowing">NOW SHOWING</a></li>
+                <li><a href="#seatspricing">SEATS & PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
-        
-     </section>
+        </nav>
+ 
+
+    <div class="text-box">
+        <h1 id="about">About Us</h1>
+        <p>The cinema has reopened after extensive improvements and renovations.</p>
+        <p>There are new seats: standard seats and reclinable first class seats.</p>
+        <p>The projection and sound systems are upgraded with the latests 3D Dolby Vision projection and Dolby Atmos sound.</p>
+        <p>See Dolby.com for more information (Links to an external site.)</p>
+        <a href ="https://www.dolby.com/technologies/dolby-atmos/" target="blank" class="dolby_btn">Dolby.com</a>
+    </div>
+
+ </section>  
 
 
-    <!--// MAIN BODY -->
-    <main>
-   
-<h1 id="nowShowing">Now Showing</h1>
-      <!--// NOW SHOWING-->
-     <div class="content-wrapper">
-        <div class="now-showing-wrapper">
-          <div class ="now-showing-card-wrapper">
-             <div class="card-front-background" style="background-image:url(../../media/movie1.jpg)"></div>
-              <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt1160419%2F&psig=AOvVaw2y_RGhrdYzmV11XmwRFmxa&ust=1641097279670000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLiTl_XZj_UCFQAAAAAdAAAAABAF/ and used for educational purposes only -->
-          
-             <div class="card-text-wrapper">
-                <div class="synopsis">A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.</div>
-                    <div class="booking">
-                      <a href= "booking.php">Book Now</a>
-                    </div>
-             </div>
-           </div>
+ <!--// NOW SHOWING -->
 
+ <section class="now-showing">
+    <h1 id="nowshowing"> Now Showing</h1>
+    <p>Get in on the current action</p>
 
-
-         <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(../../media/movie2.jpg)"></div>
-             <!-- Creative Commons image sourced from https://https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt12889404%2F&psig=AOvVaw2TVjqTOBkMYRmL-UUoTA_w&ust=1641097550591000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCICHrvfaj_UCFQAAAAAdAAAAABADand used for educational purposes only -->
-          
-           <div class="card-text-wrapper">
-                <div class="synopsis">A man ahead of his time, Cyrano de Bergerac dazzles whether with ferocious wordplay at a verbal joust or with brilliant swordplay in a duel. But, convinced that his appearance renders him unworthy of the love of a devoted friend, the luminous Roxanne, Cyrano has yet to declare his feelings for her and Roxanne has fallen in love, at first sight, with Christian.</div>
-                    <div class="booking">
-                        <a href= "booking.php">Book Now</a>
-                   </div>
+    <div class="row">
+        <div class="now-showing-col">
+            <img src="images/movie1.jpg">
+            <div class="layer">
+            <h3>Action</h3>
+            <p>A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, 
+                a brilliant and gifted young man born into a great destiny beyond his understanding, who must 
+                travel to the most dangerous planet in the universe to ensure the future of his family and his people. 
+                As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource 
+                in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear 
+                will survive.</p>
             </div>
-         </div>
+        </div>
+
+        <div class="now-showing-col">
+            <img src="images/movie2.jpg">
+            <div class="layer">
+            <h3>Romance</h3>
+            <p>A man ahead of his time, Cyrano de Bergerac dazzles whether with ferocious wordplay at a verbal joust or with 
+                brilliant swordplay in a duel. But, convinced that his appearance renders him unworthy of the love of a devoted 
+                friend, the luminous Roxanne, Cyrano has yet to declare his feelings for her and Roxanne has fallen in love, at 
+                first sight, with Christian.</p>
+            </div>
+        </div>
+
+        <div class="now-showing-col">
+            <img src="images/movie3.jpg">
+            <div class="layer">
+            <h3>Family</h3>
+            <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous 
+                foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
+            </div>
+        </div>
+
+        <div class="now-showing-col">
+            <img src="images/movie4.jpg">
+            <div class="layer">
+            <h3>Horror</h3>
+            <p>Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school 
+                friends and their spouses. It is gradually revealed that there is an imminent environmental catastrophe and 
+                that this dinner will be their last night alive.</p>
+            </div>
+        </div>
+    </div>
+    
+ </section>  
+
+ <!--// Seats and Pricing-->
+
+ <section class="SeatPricing">
+ <h1 id="seatspricing">Seats & Pricing</h1>
+ <p>For all your comforts</p>
+
+ <div class="seats">
+    <div class="seats-col">
+        <div class="firstclassseats">
+            <img src="images/FirstClassSeat.png">
+        </div>
+        <div class="standardseats">
+            <img src="images/StandardSeat.png">
+        </div>
+    </div>
+ </div>
+
+ <div class="row">
+    <div class="seatsPricing-col">
+        <div class="heading1">
+            <h3>Seat Type</h3>
+                <p>Standard Adult</p>
+                <p>Standard Concession</p>
+                <p>Standard Child</p>
+                <p>First Class Adult</p>
+                <p>First Class Concession</p>
+                <p>First Class Child</p>
+        </div>
+
+    </div>
+
+    <div class="seatsPricing-col">
+        <div class="heading2">
+            <h3>Seat Code</h3>
+                <p>STA</p>
+                <p>STP</p>
+                <p>STC</p>
+                <p>FCA</p>
+                <p>FCP</p>
+                <p>FCC</p>
+        </div>
+
+    </div>
+
+    <div class="seatsPricing-col">
+        <div class="heading3">
+            <h3>Discounted Prices</h3>
+                <p>15.00</p>
+                <p>13.50</p>
+                <p>12.00</p>
+                <p>24.00</p>
+                <p>22.50</p>
+                <p>21.00</p>
+        </div>
+
+    </div>
+
+    <div class="seatsPricing-col">
+        <div class="heading4">
+            <h3>Normal Prices</h3>
+                <p>20.50</p>
+                <p>18.00</p>
+                <p>16.50</p>
+                <p>30.00</p>
+                <p>27.00</p>
+                <p>24.00</p>
+        </div>
+
+    </div>
+ </div>
+
+ </section>
 
 
-         <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(../../media/movie3.jpg)"></div>
-             <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt10872600%2F&psig=AOvVaw0Zr31mfK_jPG1IBIV8BGOr&ust=1641097752131000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNDFotfbj_UCFQAAAAAdAAAAABAD used for educational purposes only -->
-          
-            <div class="card-text-wrapper">
-               <div class="synopsis">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</div>
-                   <div class="booking">
-                       <a href= "booking.php">Book Now</a>
-                   </div>
-           </div>
+
+ <!--// Footer --> 
+
+
+  <footer>
+      <div class="row">
+          <div class="col">
+              <p>GITHUB LINK</p>
+            <a href="https://github.com/s3727884/wp.git" target="blank"><img src="images/GitHubLogo.png" class="gitlogo"></a>
+              <p>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</p>
+          </div>
+          <div class="col">
+              <h3 id="contact">Contact</h3>
+              <p>1500 That Drive</p>
+              <p>No-the-other-Steet, TheMoon</p>
+              <p>FirstCrater, SecondFootstep, Luna</p>
+              <p class="email-id">thelunardocinema@cinema.com.moon</p>
+              <h4>Phone: 1300 goodluck calling</h4>
+          </div>
+          <div class="col">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="booking.html">BOOKINGS</a></li>
+                <li><a href="#nowshowing">NOW SHOWING</a></li>
+                <li><a href="#seatspricing">SEATS & PRICING</a></li>
+              </ul>
           </div>
 
+          <div class="col">
+              <h3>Required Info</h3>
+              
+              <div>&copy;<script>
+                document.write(new Date().getFullYear());
+              </script> Evert Visser, S3727884, Group 1. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+              <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
 
-         <div class ="now-showing-card-wrapper">
-           <div class="card-front-background" style="background-image:url(../../media/movie4.jpg)"></div>
-             <!-- Creative Commons image sourced from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt11628854%2F&psig=AOvVaw2_vRqPQBVXsXuI43TaWyeM&ust=1641098029336000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCIDP1dzcj_UCFQAAAAAdAAAAABAD used for educational purposes only -->
-          
-           <div class="card-text-wrapper">
-                <div class="synopsis">Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school friends and their spouses. It is gradually revealed that there is an imminent environmental catastrophe and that this dinner will be their last night alive.</div>
-                    <div class="booking">
-                        <a href= "booking.php">Book Now</a>
-                    </div>
-           </div>
+
           </div>
       </div>
-      
-
-      <h1 id="seatsPricing">Seats and Pricing</h1>
-    </main>
-
-    <!--// FOOTER -->
-    <footer>
-
-    <!--// CONTACT INFO -->
-     <h1 id="contactInfo">Contact Us</h1>
-         <div class ="contactInfo">
-           Contact Information: Phone +61(0) 3 555 1234.   Email: thelunardocinema@cinema.com
-         </div> 
-
-           <div>&copy;<script>
-             document.write(new Date().getFullYear());
-           </script> Evert Visser, S3727884, Group 1. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-
-          <a href="https://github.com/s3727884/wp.git" target="_blank">GitHub Link</a> 
-
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-  
-  
+      <hr>
+      <p class="copyright">Evert Visser © 2022 - All Rights Reserved</p>
     </footer>
 
+
 </body>
-
-<!--// JavaScript-->
-
-<!--// Card Blackout Script-->
-<script>
-  const nowShowingItems = document.querySelectorAll('.now-showing-card-wrapper')
-
-  nowShowingItems.forEach(nowShowingItem => {
-      nowShowingItem.addEventListener('mouseover', () =>{
-          nowShowingItem.childNodes[1].classList.add('img-darken');
-      })
-
-      nowShowingItem.addEventListener('mouseout', () =>{
-        nowShowingItem.childNodes[1].classList.remove('img-darken');
-    })
-  })
-</script>
 </html>
