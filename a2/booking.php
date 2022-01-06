@@ -19,14 +19,14 @@
     <!--// LOGO and NAV -->
     <section class="header">
       <nav>
-          <a href ="index.html"><img src="images/Logo2.png" class="logo"></a>
+          <a href ="index.php"><img src="../../media/Logo2.png" class="logo"></a>
           <div class="navbar">
           <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="index.html#about">ABOUT</a></li>
-              <li><a href="booking.html">BOOKINGS</a></li>
-              <li><a href="index.html#nowshowing">NOW SHOWING</a></li>
-              <li><a href="index.html#seatspricing">SEATS & PRICING</a></li>
+              <li><a href="index.php">HOME</a></li>
+              <li><a href="index.php#about">ABOUT</a></li>
+              <li><a href="booking.php">BOOKINGS</a></li>
+              <li><a href="index.php#nowshowing">NOW SHOWING</a></li>
+              <li><a href="index.php#seatspricing">SEATS & PRICING</a></li>
               <li><a href="#contact">CONTACT</a></li>
           </ul>
       </div>
@@ -48,7 +48,7 @@
     <div class="row">
       <div class="col">
           <p>GITHUB LINK</p>
-        <a href="https://github.com/s3727884/wp.git" target="blank"><img src="images/GitHubLogo.png" class="gitlogo"></a>
+        <a href="https://github.com/s3727884/wp.git" target="blank"><img src="../../media/GitHubLogo.png" class="gitlogo"></a>
           <p>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</p>
       </div>
       <div class="col">
@@ -62,11 +62,11 @@
       <div class="col">
           <h3>Links</h3>
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="booking.html">BOOKINGS</a></li>
-            <li><a href="index.html#nowshowing">NOW SHOWING</a></li>
-            <li><a href="index.html#seatspricing">SEATS & PRICING</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="index.php#about">ABOUT</a></li>
+            <li><a href="booking.php">BOOKINGS</a></li>
+            <li><a href="index.php#nowshowing">NOW SHOWING</a></li>
+            <li><a href="index.php#seatspricing">SEATS & PRICING</a></li>
           </ul>
       </div>
 
