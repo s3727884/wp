@@ -10,19 +10,19 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
     <script src='../wireframe.js'></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link id="booking" href="booking.html">
+    <link id="booking" href="booking.php">
   </head>
 
 <body>
     <!--// LOGO and NAV -->
     <section class="header">
         <nav>
-            <a href ="index.html"><img src="images/Logo2.png" class="logo"></a>
+            <a href ="index.php"><img src="../../media/Logo2.png" class="logo"></a>
             <div class="navbar">
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="booking.html">BOOKINGS</a></li>
+                <li><a href="booking.php">BOOKINGS</a></li>
                 <li><a href="#nowshowing">NOW SHOWING</a></li>
                 <li><a href="#seatspricing">SEATS & PRICING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -51,7 +51,7 @@
 
     <div class="row">
         <div class="now-showing-col">
-            <img src="images/movie1.jpg">
+            <img src="../../media/movie1.jpg">
             <div class="layer">
             <h3>Action</h3>
             <p>A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, 
@@ -64,7 +64,7 @@
         </div>
 
         <div class="now-showing-col">
-            <img src="images/movie2.jpg">
+            <img src="../../media/movie2.jpg">
             <div class="layer">
             <h3>Romance</h3>
             <p>A man ahead of his time, Cyrano de Bergerac dazzles whether with ferocious wordplay at a verbal joust or with 
@@ -75,7 +75,7 @@
         </div>
 
         <div class="now-showing-col">
-            <img src="images/movie3.jpg">
+            <img src="../../media/movie3.jpg">
             <div class="layer">
             <h3>Family</h3>
             <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous 
@@ -84,7 +84,7 @@
         </div>
 
         <div class="now-showing-col">
-            <img src="images/movie4.jpg">
+            <img src="../../media/movie4.jpg">
             <div class="layer">
             <h3>Horror</h3>
             <p>Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school 
@@ -105,10 +105,10 @@
  <div class="seats">
     <div class="seats-col">
         <div class="firstclassseats">
-            <img src="images/FirstClassSeat.png">
+            <img src="../../media/FirstClassSeat.png">
         </div>
         <div class="standardseats">
-            <img src="images/StandardSeat.png">
+            <img src="../../media/StandardSeat.png">
         </div>
     </div>
  </div>
@@ -178,7 +178,7 @@
       <div class="row">
           <div class="col">
               <p>GITHUB LINK</p>
-            <a href="https://github.com/s3727884/wp.git" target="blank"><img src="images/GitHubLogo.png" class="gitlogo"></a>
+            <a href="https://github.com/s3727884/wp.git" target="blank"><img src="../../media/GitHubLogo.png" class="gitlogo"></a>
               <p>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</p>
           </div>
           <div class="col">
@@ -192,9 +192,9 @@
           <div class="col">
               <h3>Links</h3>
               <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="index..php">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="booking.html">BOOKINGS</a></li>
+                <li><a href="booking.php">BOOKINGS</a></li>
                 <li><a href="#nowshowing">NOW SHOWING</a></li>
                 <li><a href="#seatspricing">SEATS & PRICING</a></li>
               </ul>
