@@ -8,51 +8,44 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(../../media/Cinema.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(images/Cinema.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    
+}
+nav ul{
+    float: right;
+    margin: 0;
+    padding-right: 42px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 16px 32px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+nav.black ul{
+    background: #000;
+    opacity: 1;
 }
 
 .logo{
+    
     width: 150px;
+    float: left;
+    margin: 16px 48px;
     cursor: pointer;
 }
-.navbar{
-   flex: 1;
-   text-align: right;
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #e07a5f;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.2s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
+
 body{
     background: white;
 }
@@ -79,7 +72,16 @@ body{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+.now-showing h1{
+    font-size: 50px;
+    color: #3d405b;
+}
+.now-showing p{
+    font-size: 25px;
+    color: #3d405b;
+    padding-bottom: 20px;
 }
 
 .now-showing-col{
@@ -118,14 +120,14 @@ body{
     transition: 0.5s;
 }
 .layer:hover h3{
-    bottom: 90%;
+    bottom: 70%;
     opacity: 1;
 }
 .layer p{
-    width: 100%;
+    width: 90%;
     font-weight: 100;
     color: #fff;
-    font-size: 20px;
+    font-size: 13px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -136,6 +138,20 @@ body{
 .layer:hover p{
     bottom: 30%;
     opacity: 1;
+}
+
+.booknow_btn{
+    cursor: pointer;
+    width: 100%;
+    background: #3d405b;
+    color: white;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 @media(max-width: 700px){
@@ -266,8 +282,9 @@ hr{
         display: block;
     }
     .navbar{
-        position: absolute;
+        position: fixed;
         background: #3d405b;
+        backdrop-filter: blur(1rem);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -286,4 +303,12 @@ hr{
         flex-basis: 100%;
         
     }
+}
+
+
+/*------- bookings Page ------*/
+
+
+.ticket-quantity-plus-minus-numeric{
+    display: flex;
 }
