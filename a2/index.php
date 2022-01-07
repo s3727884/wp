@@ -52,6 +52,13 @@
     <div class="row">
         <div class="now-showing-col">
             <img src="../../media/movie1.jpg">
+          <div class="times">
+                <p>Rating - PG 13</p>
+                <p>Show Times:</p>
+                <p>Mon-Tue: 9PM</p>
+                <p>Wed-Fri: 9PM</p>
+                <p>Sat-Sun: 6PM</p>
+            </div>
             <div class="layer">
             <h3>Action</h3>
             <p>A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, 
@@ -66,6 +73,13 @@
 
         <div class="now-showing-col">
             <img src="../../media/movie2.jpg">
+          <div class="times">
+                <p>Rating - PG 13</p>
+                <p>Show Times:</p>
+                <p>Mon-Tue: 9PM</p>
+                <p>Wed-Fri: 9PM</p>
+                <p>Sat-Sun: 6PM</p>
+            </div>
             <div class="layer">
             <h3>Romance</h3>
             <p>A man ahead of his time, Cyrano de Bergerac dazzles whether with ferocious wordplay at a verbal joust or with 
@@ -78,6 +92,13 @@
 
         <div class="now-showing-col">
             <img src="../../media/movie3.jpg">
+           <div class="times">
+                <p>Rating - PG 13</p>
+                <p>Show Times:</p>
+                <p>Mon-Tue: 9PM</p>
+                <p>Wed-Fri: 9PM</p>
+                <p>Sat-Sun: 6PM</p>
+            </div>
             <div class="layer">
             <h3>Family</h3>
             <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous 
@@ -88,6 +109,13 @@
 
         <div class="now-showing-col">
             <img src="../../media/movie4.jpg">
+          <div class="times">
+                <p>Rating - MA 15+</p>
+                <p>Show Times:</p>
+                <p>Mon-Tue: 9PM</p>
+                <p>Wed-Fri: 9PM</p>
+                <p>Sat-Sun: 6PM</p>
+            </div>
             <div class="layer">
             <h3>Horror</h3>
             <p>Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school 
