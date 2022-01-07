@@ -139,7 +139,27 @@ body{
     bottom: 30%;
     opacity: 1;
 }
-
+.times{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: 0.5s;
+}
+.times p{
+    width: 90%;
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 1;
+    transition: 0.5s;
+}
 .booknow_btn{
     cursor: pointer;
     width: 100%;
