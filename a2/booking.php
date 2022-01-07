@@ -40,7 +40,92 @@
     </div>
 
     </section>
-   
+   <section>
+
+
+<div class="row">
+  <div class="col">
+    <h3>Ticket Type</h3>
+    <p>Standard Adult</p>
+    <p>Standard Consession</p>
+    <p>Standard Child</p>
+    <p>First Class Adult</p>
+    <p>First Class Consession</p>
+    <p>First Class Child</p>
+  </div>
+
+  <div class="col">
+  <h3>Cost</h3>
+  <p>20.50</p>
+  <p>18.00</p>
+  <p>16.50</p>
+  <p>30.00</p>
+  <p>27.00</p>
+  <p>24.00</p>
+</div>
+
+<div class="col">
+  <h3>Qty</h3>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0001" class="quantity" name="ticket-0001;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0002" class="quantity" name="ticket-0002;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0003" class="quantity" name="ticket-0003;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0004" class="quantity" name="ticket-0004;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0005" class="quantity" name="ticket-0005;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+  <span class="ticket-quantity-plus-minus-numeric">
+    <button type="button" class="minus icon icon-minus"></button>
+      <input type="text" id="0006" class="quantity" name="ticket-0006;" value="0"
+        autocomplete="off" tabindex="1" min="0" max="10">
+      </input>
+    <button type="button" class="plus icon icon-plus"></button>
+  </span>
+
+</div>
+
+<div class="col">
+  <h3>Subtotal</h3>
+    <p><span class="sub-total last-child">0.00</span></p>
+    <p><span class="sub-total last-child">0.00</span></p>
+    <p><span class="sub-total last-child">0.00</span></p>
+    <p><span class="sub-total last-child">0.00</span></p>
+    <p><span class="sub-total last-child">0.00</span></p>
+    <p><span class="sub-total last-child">0.00</span></p>
+  </div>
+
+</div>
+
+
+</section>
+
 
 
 
