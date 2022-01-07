@@ -60,6 +60,7 @@
                 As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource 
                 in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear 
                 will survive.</p>
+              <a href="booking.php"><button class="booknow_btn">Book Now</button></a>
             </div>
         </div>
 
@@ -71,6 +72,7 @@
                 brilliant swordplay in a duel. But, convinced that his appearance renders him unworthy of the love of a devoted 
                 friend, the luminous Roxanne, Cyrano has yet to declare his feelings for her and Roxanne has fallen in love, at 
                 first sight, with Christian.</p>
+              <a href="booking.php"><button class="booknow_btn">Book Now</button></a>
             </div>
         </div>
 
@@ -80,6 +82,7 @@
             <h3>Family</h3>
             <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous 
                 foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
+              <a href="booking.php"><button class="booknow_btn">Book Now</button></a>
             </div>
         </div>
 
@@ -90,6 +93,7 @@
             <p>Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school 
                 friends and their spouses. It is gradually revealed that there is an imminent environmental catastrophe and 
                 that this dinner will be their last night alive.</p>
+              <a href="booking.php"><button class="booknow_btn">Book Now</button></a>
             </div>
         </div>
     </div>
