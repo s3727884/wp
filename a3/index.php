@@ -23,7 +23,7 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link id="booking" href="booking.html" />
+    <link id="booking" href="booking.php" />
   </head>
 
   <body>
@@ -35,7 +35,7 @@
           <ul>
             <li><a href="index.php">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="booking.html">BOOKINGS</a></li>
+            <li><a href="booking.php">BOOKINGS</a></li>
             <li><a href="#nowshowing">NOW SHOWING</a></li>
             <li><a href="#seatspricing">SEATS & PRICING</a></li>
             <li><a href="#contact">CONTACT</a></li>
