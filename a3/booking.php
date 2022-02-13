@@ -10,7 +10,7 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
     <script src='../wireframe.js'></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+<link rel="stylesheet" href="" class="post-validation php">
     
   </head>
 
@@ -23,111 +23,122 @@
           <div class="navbar">
           <ul>
               <li><a href="index.php">HOME</a></li>
-              <li><a href="index.php#about">ABOUT</a></li>
-              <li><a href="booking.php">BOOKINGS</a></li>
-              <li><a href="index.php#nowshowing">NOW SHOWING</a></li>
-              <li><a href="index.php#seatspricing">SEATS & PRICING</a></li>
+
               <li><a href="#contact">CONTACT</a></li>
           </ul>
       </div>
       </nav>
 
-      <div class="text-box">
-        <h1 id="booking">BOOKINGS</h1>
-        <p>This is the bookings page.</p>
-        <p>get yer tickets here.</p>
+      <div class="iframe-container">
+          <iframe width="460" height="215" src="https://www.youtube.com/embed/8g18jFHCLXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
 
+    <section>
+    <h2 class="info-heading">Enter Personal Information</h2>
+       <div class="info-container">
+         <div class="personal-info">
+          <input type="text" class="field" placeholder="Name">
+          <input type="email" class="field" placeholder="Email">
+          <input type="text" class="field" placeholder="Phone">
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="info-heading">Select Session Time</h2>
+      <div class="radio-container">
+      <div class="radio">
+        <input class="radio__input" type="radio" value="option1" name="myRadio" id="myRadio1">
+        <label class="radio__label" for="myRadio1">MON 9 PM</label>
+         <input class="radio__input" type="radio" value="option2" name="myRadio" id="myRadio2">
+        <label class="radio__label" for="myRadio2">TUE 9 PM</label>
+         <input class="radio__input" type="radio" value="option3" name="myRadio" id="myRadio3">
+        <label class="radio__label" for="myRadio3">WED 9 PM</label>
+         <input class="radio__input" type="radio" value="option4" name="myRadio" id="myRadio4">
+        <label class="radio__label" for="myRadio4">THU 9 PM</label>
+         <input class="radio__input" type="radio" value="option5" name="myRadio" id="myRadio5">
+        <label class="radio__label" for="myRadio5">FRI 9 PM</label>
+         <input class="radio__input" type="radio" value="option6" name="myRadio" id="myRadio6">
+        <label class="radio__label" for="myRadio6">SAT 6 PM</label>
+         <input class="radio__input" type="radio" value="option7" name="myRadio" id="myRadio7">
+        <label class="radio__label" for="myRadio7">SUN 6 PM</label>
+      </div>
+      </div>
+    </section>
+
+
+    <section>
+    <h2 class="info-heading">Ticket Selection</h2>
+    <div class="bookings-row">
+      <div class="booking-col">
+        <h3>Ticket Type</h3>
+        <p>Standard Adult</p>
+        <p>Standard Consession</p>
+        <p>Standard Child</p>
+        <p>First Class Adult</p>
+        <p>First Class Consession</p>
+        <p>First Class Child</p>
+      </div>
+
+      <div class="booking-col">
+      <h3>Discount Price</h3>
+      <p>$15.00</p>
+      <p>$13.50</p>
+      <p>$12.00</p>
+      <p>$24.00</p>
+      <p>$22.50</p>
+      <p>$21.00</p>
     </div>
 
+      <div class="booking-col">
+      <h3>Normal Price</h3>
+      <p>$20.50</p>
+      <p>$18.00</p>
+      <p>$16.50</p>
+      <p>$30.00</p>
+      <p>$27.00</p>
+      <p>$24.00</p>
+    </div>
+
+
+    <div class="booking-col">
+      <h3>Qty Required</h3>
+      <span class="ticket-quantity">
+          <input type="text" id="0001" class="quantity" name="ticket-0001;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+      <span class="ticket-quantity">
+          <input type="text" id="0002" class="quantity" name="ticket-0002;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+      <span class="ticket-quantity">
+          <input type="text" id="0003" class="quantity" name="ticket-0003;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+      <span class="ticket-quantity">
+          <input type="text" id="0004" class="quantity" name="ticket-0004;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+      <span class="ticket-quantity">
+          <input type="text" id="0005" class="quantity" name="ticket-0005;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+      <span class="ticket-quantity">
+          <input type="text" id="0006" class="quantity" name="ticket-0006;" value="0"
+            autocomplete="off" tabindex="1" min="0" max="10">
+      </span>
+
+    </div>
     </section>
-   <section>
 
+    <section>
+      <div class="final-bookbtn">
+       <a><button class="bookbtn">Confirm Booking</button></a>
+      </div>
 
-<div class="row">
-  <div class="col">
-    <h3>Ticket Type</h3>
-    <p>Standard Adult</p>
-    <p>Standard Consession</p>
-    <p>Standard Child</p>
-    <p>First Class Adult</p>
-    <p>First Class Consession</p>
-    <p>First Class Child</p>
-  </div>
-
-  <div class="col">
-  <h3>Cost</h3>
-  <p>20.50</p>
-  <p>18.00</p>
-  <p>16.50</p>
-  <p>30.00</p>
-  <p>27.00</p>
-  <p>24.00</p>
-</div>
-
-<div class="col">
-  <h3>Qty</h3>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0001" class="quantity" name="ticket-0001;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0002" class="quantity" name="ticket-0002;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0003" class="quantity" name="ticket-0003;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0004" class="quantity" name="ticket-0004;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0005" class="quantity" name="ticket-0005;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-  <span class="ticket-quantity-plus-minus-numeric">
-    <button type="button" class="minus icon icon-minus"></button>
-      <input type="text" id="0006" class="quantity" name="ticket-0006;" value="0"
-        autocomplete="off" tabindex="1" min="0" max="10">
-      </input>
-    <button type="button" class="plus icon icon-plus"></button>
-  </span>
-
-</div>
-
-<div class="col">
-  <h3>Subtotal</h3>
-    <p><span class="sub-total last-child">0.00</span></p>
-    <p><span class="sub-total last-child">0.00</span></p>
-    <p><span class="sub-total last-child">0.00</span></p>
-    <p><span class="sub-total last-child">0.00</span></p>
-    <p><span class="sub-total last-child">0.00</span></p>
-    <p><span class="sub-total last-child">0.00</span></p>
-  </div>
-
-</div>
-
-
-</section>
-
-
-
+    </section>
 
     <footer>
     <div class="row">
@@ -181,6 +192,18 @@ SESSION Contains:
       </pre>
     </aside>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
   </body>
 
 
