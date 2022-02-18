@@ -12,36 +12,47 @@
     url(../../media/Cinema.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 nav {
   position: fixed;
+  align-content: right;
+  height: 80px;
   z-index: 50;
-  width: 100%;
-  line-height: 60px;
+  top: 20px;
+  background-color: #000;
 }
-nav ul {
-  float: right;
-  margin: 0;
-  padding-right: 42px;
+nav.navbar {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
 }
-nav ul li {
+
+nav .navbar ul li {
   display: inline-block;
-  padding: 16px 32px;
+  padding: 10px 20px;
 }
-nav ul li a {
+nav .navbar ul li a {
+  display: block;
   text-decoration: none;
+  padding: 10px 20px;
   color: #fff;
   font-size: 15px;
 }
-nav.black ul {
-  background: #000;
-  opacity: 1;
+
+nav .navbar ul li.active {
+  background-color: crimson;
+  transition: 0.3s ease background-color;
+}
+nav .navbar ul li.active a {
+  color: rgb(255, 255, 255);
 }
 
 .logo {
+  position: sticky;
   width: 150px;
-  float: left;
+  float: right;
   margin: 16px 48px;
   cursor: pointer;
 }
@@ -333,8 +344,8 @@ hr {
   left: 10%;
   right: 50px;
   bottom: 10%;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 
 .info-container {
