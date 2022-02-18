@@ -223,17 +223,7 @@ SESSION Contains:
     </aside>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-    <script type="text/javascript">
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop()) {
-          $("nav").addClass("black");
-        } else {
-          $("nav").removeClass("black");
-        }
-      });
-    </script>
+ <script src="./script.js"></script>
   </body>
 
 
