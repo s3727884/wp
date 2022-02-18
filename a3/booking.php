@@ -42,7 +42,7 @@
         </div>
 
         <form class ="form" id="form">
-          <div class="personal-info success">
+          <div class="personalInfo success">
             <label>Name</label>
             <input type="text" placeholder="Name" id="username">
             <i class="fas fa-check-circle"></i>
@@ -50,7 +50,7 @@
             <small>Error message</small>
           </div>
 
-          <div class="personal-info error">
+          <div class="personalInfo error">
             <label>Phone</label>
             <input type="text" placeholder="Phone" id="phone">
             <i class="fas fa-check-circle"></i>
@@ -58,7 +58,7 @@
             <small>Error message</small>
           </div>
 
-          <div class="personal-info">
+          <div class="personalInfo">
             <label>Email</label>
             <input type="email" placeholder="email@email.com" id="email">
             <i class="fas fa-check-circle"></i>
@@ -164,10 +164,11 @@
     </section>
 
     <section>
+      <form>
       <div class="final-bookbtn">
        <a><button class="bookbtn">Confirm Booking</button></a>
       </div>
-
+    </form>
     </section>
 
     <footer>
@@ -208,7 +209,7 @@
   <hr>
   <p class="copyright">Evert Visser © 2022 - All Rights Reserved</p>
 </footer>
-
+<script src="./script.js"></script>
     <aside id="debug">
       <hr>
       <h3>Debug Area</h3>
@@ -223,7 +224,7 @@ SESSION Contains:
     </aside>
 
 
- <script src="./script.js"></script>
+ 
   </body>
 
 
