@@ -369,18 +369,18 @@ hr {
   padding: 30px 40px;
 }
 
-.personal-info {
+.personalInfo {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 
-.personal-info label {
+.personalInfo label {
   display: inline-block;
   margin-bottom: 5px;
 }
 
-.personal-info input {
+.personalInfo input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   font-family: inherit;
@@ -389,41 +389,41 @@ hr {
   padding: 10px;
   width: 50%;
 }
-.personal-info input:focus {
+.personalInfo input:focus {
   outline: 0;
   border-color: #777;
 }
 
-.personal-info.success input {
+.personalInfo.success input {
   border-color: #2ecc71;
 }
 
-.personal-info.error input {
+.personalInfo.error input {
   border-color: #e74c3c;
 }
-.personal-info.success i.fa-check-circle {
+.personalInfo.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
 }
 
-.personal-info.error i.fa-exclamation-circle {
+.personalInfo.error i.fa-exclamation-circle {
   color: #e74c3c;
   visibility: visible;
 }
 
-.personal-info.error small {
+.personalInfo.error small {
   color: #e74c3c;
   visibility: visible;
 }
 
-.personal-info i {
+.personalInfo i {
   position: absolute;
   top: 40px;
   right: 10px;
   visibility: hidden;
 }
 
-.personal-info small {
+.personalnfo small {
   visibility: hidden;
   position: absolute;
   bottom: 0;
@@ -537,3 +537,4 @@ hr {
 .bookbtn:hover {
   background-color: rgb(233, 127, 127);
 }
+
