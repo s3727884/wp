@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Assignment 3</title>
+    <title>Assignment 2</title>
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link
@@ -23,22 +23,24 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link id="booking" href="booking.php" />
+    <link id="booking" href="booking.html" />
   </head>
 
+  <!--// LOGO and NAV -->
+
   <body>
-    <!--// LOGO and NAV -->
-    <section class="header">
+    <section class="header" id="about">
+      <a href="index.php"><img src="../../media/Logo2.png" class="logo" /></a>
       <nav>
-        <a href="index.php"><img src="../../media/Logo2.png" class="logo" /></a>
         <div class="navbar">
           <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="booking.php">BOOKINGS</a></li>
-            <li><a href="#nowshowing">NOW SHOWING</a></li>
-            <li><a href="#seatspricing">SEATS & PRICING</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li class="about active"><a href="#about">ABOUT</a></li>
+            <li class="nowshowing"><a href="#nowshowing">NOW SHOWING</a></li>
+            <li class="seatsPricing">
+              <a href="#seatspricing">SEATS & PRICING</a>
+            </li>
+            <li class="Contact"><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </nav>
@@ -67,7 +69,7 @@
 
     <!--// NOW SHOWING -->
 
-    <section class="now-showing">
+    <section class="now-showing" id="nowshowing">
       <h1 id="nowshowing">Now Showing</h1>
       <p>Get in on the current action</p>
 
@@ -175,7 +177,7 @@
 
     <!--// Seats and Pricing-->
 
-    <section class="SeatPricing">
+    <section class="SeatPricing" id="seatsPricing">
       <h1 id="seatspricing">Seats & Pricing</h1>
       <p>For all your comforts</p>
 
@@ -242,7 +244,7 @@
     </section>
 
     <!--// Footer -->
-
+    <section id="Contact"></section>
     <footer>
       <div class="row">
         <div class="col">
@@ -296,19 +298,10 @@
       <hr />
       <p class="copyright">Evert Visser © 2022 - All Rights Reserved</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./script.js"></script>
 
-    <script type="text/javascript">
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop()) {
-          $("nav").addClass("black");
-        } else {
-          $("nav").removeClass("black");
-        }
-      });
-    </script>
-        <aside id="debug">
-      <hr>
+    <aside id="debug">
+      <hr />
       <h3>Debug Area</h3>
       <pre>
 GET Contains:
@@ -320,8 +313,4 @@ SESSION Contains:
       </pre>
     </aside>
   </body>
-</html>
-
-
-</body>
 </html>
