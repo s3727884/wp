@@ -50,7 +50,7 @@ nav .navbar ul li.active a {
 }
 
 .logo {
-  position: sticky;
+  position: relative;
   width: 150px;
   float: right;
   margin: 16px 48px;
