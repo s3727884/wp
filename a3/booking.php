@@ -35,19 +35,47 @@
     </section>
 
     <section>
-    <h2 class="info-heading">Enter Personal Information</h2>
-       <div class="info-container">
-         <div class="personal-info">
-          <input type="text" class="field" placeholder="Name">
-          <input type="email" class="field" placeholder="Email">
-          <input type="text" class="field" placeholder="Phone">
+
+      <div class="info-container">
+        <div class="info-header">  
+          <h2>Enter Personal Information</h2>
+        </div>
+
+        <form class ="form" id="form">
+          <div class="personal-info success">
+            <label>Name</label>
+            <input type="text" placeholder="Name" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="personal-info error">
+            <label>Phone</label>
+            <input type="text" placeholder="Phone" id="phone">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="personal-info">
+            <label>Email</label>
+            <input type="email" placeholder="email@email.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
 
         </div>
+        </form>
       </div>
     </section>
 
     <section>
-      <h2 class="info-heading">Select Session Time</h2>
+      <div class="info-container">
+      <h2 class="info-header">Select Session Time</h2>
+      </div>
       <div class="radio-container">
       <div class="radio">
         <input class="radio__input" type="radio" value="option1" name="myRadio" id="myRadio1">
@@ -70,8 +98,10 @@
 
 
     <section>
-    <h2 class="info-heading">Ticket Selection</h2>
-    <div class="bookings-row">
+      <div class="info-container">
+      <h2 class="info-header">Ticket Selection</h2>
+      </div>
+      <div class="bookings-row">
       <div class="booking-col">
         <h3>Ticket Type</h3>
         <p>Standard Adult</p>
