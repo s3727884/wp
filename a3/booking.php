@@ -18,12 +18,12 @@
 
     <!--// LOGO and NAV -->
     <section class="header">
+      <a href ="index.php"><img src="../../media/Logo2.png" class="logo"></a>
       <nav>
-          <a href ="index.php"><img src="../../media/Logo2.png" class="logo"></a>
+          
           <div class="navbar">
           <ul>
               <li><a href="index.php">HOME</a></li>
-
               <li><a href="#contact">CONTACT</a></li>
           </ul>
       </div>
