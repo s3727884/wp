@@ -349,49 +349,85 @@ hr {
 }
 
 .info-container {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 20px 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  max-width: 100%;
+  padding: 10px 20px;
 }
-.info-heading {
+
+.info-header {
+  background-color: #8c8d99;
   align-items: left;
   padding-left: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 100%;
 }
+.form {
+  padding: 30px 40px;
+}
+
 .personal-info {
-  padding-left: 55px;
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-.field {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  outline: none;
-  border: 2px solid rgba(0, 0, 0, 0);
-  background-color: rgba(230, 230, 230, 0.6);
-  font-size: 1.1rem;
-  margin-bottom: 22px;
-  transition: 0.3s;
+.personal-info label {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
-.field:hover {
-  background-color: rgb(150, 144, 144);
+.personal-info input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-family: inherit;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 50%;
+}
+.personal-info input:focus {
+  outline: 0;
+  border-color: #777;
 }
 
-.field:focus {
-  background-color: rgb(136, 131, 131);
-  border: 2px soldi rgba(30, 85, 250, 0.47);
+.personal-info.success input {
+  border-color: #2ecc71;
+}
+
+.personal-info.error input {
+  border-color: #e74c3c;
+}
+.personal-info.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.personal-info.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.personal-info.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.personal-info i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.personal-info small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .ticket-quantity {
