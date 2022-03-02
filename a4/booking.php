@@ -1,231 +1,303 @@
+<?php 
+
+  $moviesObject = [
+    'ACT' => [
+      'trailer' => '8g18jFHCLXk',
+      'title' => 'Dune',
+      'rating' => 'PG-13 (Some Disturbing Images|Sequences of Strong Violence|Suggestive Material)',
+      'genre' => 'Action, Adventure, Sci-Fi',
+      'plot' => 'Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet\'s exclusive supply of the most precious resource in existence, only those who can conquer their own fear will survive.',
+      'imdb' => 'tt1160419',
+      'screening-summary' => 'Mon-Tue: 9pm, Wed-Fri: 9pm, Sat-Sun: 6pm',
+      'screenings' => [
+        'MON' => [
+          'time' => '9pm',
+          'rate' => 'discount'
+        ],
+        'TUE' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ],
+        'WED' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ],
+        'THU' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ],
+        'FRI' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ],
+        'SAT' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ],
+        'SUN' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ]
+      ]
+    ], 
+    'RMC' => [
+      'trailer' => 'fOInHcgmKus',
+      'title' => 'Cyrano',
+      'rating' => 'PG-13 (Suggestive Material|Some Strong Violence|Brief Language|Thematic Material)',
+      'genre' => 'Romance, Drama, Musical',
+      'plot' => 'Award-winning director Joe Wright envelops moviegoers in a symphony of emotions with music, romance, and beauty in Cyrano, re-imagining the timeless tale of a heartbreaking love triangle. A man ahead of his time, Cyrano de Bergerac (played by Peter Dinklage) dazzles whether with ferocious wordplay at a verbal joust or with brilliant swordplay in a duel. But, convinced that his appearance renders him unworthy of the love of a devoted friend, the luminous Roxanne (Haley Bennett), Cyrano has yet to declare his feelings for her -- and Roxanne has fallen in love, at first sight, with Christian (Kelvin Harrison, Jr.).',
+      'imdb' => 'tt12889404',
+      'screening-summary' => 'Mon-Tue: 6pm, Wed-Fri: Not Showing, Sat-Sun: 3pm',
+      'screenings' => [
+        'MON' => [
+          'time' => '6pm',
+          'rate' => 'discount'
+        ],
+        'TUE' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ],
+        'SAT' => [
+          'time' => '3pm',
+          'rate' => 'regular'
+        ],
+        'SUN' => [
+          'time' => '3pm',
+          'rate' => 'regular'
+        ]
+      ]
+    ],
+    'FAM' => [
+      'trailer' => 'JfVOs4VSpmA',
+      'title' => 'Spider Man: No Way Home',
+      'rating' => 'PG-13 (Sequences of Action/Violence|Brief Suggestive Comments|Some Language)',
+      'genre' => 'Comedy, Adventure, Fantasy, Action',
+      'plot' => 'For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero\'s identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange\'s help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who\'ve ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse.',
+      'imdb' => 'tt10872600',
+      'screening-summary' => 'Mon-Tue: 12pm, Wed-Fri: 6pm, Sat-Sun: 12pm',
+      'screenings' => [
+        'MON' => [
+          'time' => '12pm',
+          'rate' => 'discount'
+        ],
+        'TUE' => [
+          'time' => '12pm',
+          'rate' => 'discount'
+        ],
+        'WED' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ],
+        'THU' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ],
+        'FRI' => [
+          'time' => '6pm',
+          'rate' => 'regular'
+        ],
+        'SAT' => [
+          'time' => '12pm',
+          'rate' => 'regular'
+        ],
+        'SUN' => [
+          'time' => '12pm',
+          'rate' => 'regular'
+        ]
+      ]
+    ],
+    'AHF' => [
+      'trailer' => 'u1dOECVgqIQ',
+      'title' => 'Silent Night',
+      'rating' => 'MA15+',
+      'genre' => 'Horror, Drama, Comedy',
+      'plot' => 'Nell, Simon and their son Art host a yearly Christmas dinner at their country estate for their former school friends and their spouses. It is gradually revealed that there is an imminent environmental catastrophe and that this dinner will be their last night alive.',
+      'imdb' => 'tt11628854',
+      'screening-summary' => 'Mon-Tue: Not Showing, Wed-Fri: 12pm, Sat-Sun: 9pm',
+      'screenings' => [
+        'WED' => [
+          'time' => '12pm',
+          'rate' => 'discount'
+        ],
+        'THU' => [
+          'time' => '12pm',
+          'rate' => 'discount'
+        ],
+        'FRI' => [
+          'time' => '12pm',
+          'rate' => 'discount'
+        ],
+        'SAT' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ],
+        'SUN' => [
+          'time' => '9pm',
+          'rate' => 'regular'
+        ]
+      ]
+    ]
+  ];
+
+  $seatsObject = [
+    'STA'=> [
+      'desc' => 'Standard Adult',
+      'regular' => 20.50,
+      'discount' => 15.00
+    ],
+    'STP'=> [
+      'desc' => 'Standard Concession',
+      'regular' => 18.00,
+      'discount' => 13.50
+    ],
+    'STC'=> [
+      'desc' => 'Standard Child',
+      'regular' => 16.50,
+      'discount' => 12.00
+    ],
+    'FCA'=> [
+      'desc' => 'First Class Adult',
+      'regular' => 30.00,
+      'discount' => 24.00
+    ],
+    'FCP'=> [
+      'desc' => 'First Class Concession',
+      'regular' => 27.00,
+      'discount' => 22.50
+    ],
+    'FCC'=> [
+      'desc' => 'First Class Child',
+      'regular' => 24.00,
+      'discount' => 21.00
+    ]
+  ];
+
+  $movie = 'ACT'; // default setting for A4 simplicity
+  if ( isset($_GET['movie']) && isset($moviesObject[$_GET['movie']]) ) {
+    $movie = $_GET['movie'];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lunardo Booking Page</title>
-    
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-    <script src='../wireframe.js'></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-<link rel="stylesheet" href="" class="post-validation php">
-    
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lunardo Booking Page</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    fieldset {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    button, input {
+      padding: 10px;
+      margin: 5px;
+    }
+    label {
+      display: inline-flex;
+      align-items: center;
+      border: 1px #999 solid;
+      border-radius: 10px;
+      padding: 5px 10px 5px 5px;
+      margin: 10px;
+      
+    }
+  </style>
+  <script>
+    var moviesObjectJS = <?= json_encode($moviesObject, JSON_PRETTY_PRINT) ?>;
+    var seatsObjectJS = <?= json_encode($seatsObject, JSON_PRETTY_PRINT) ?>;
+  </script>
+</head>
 
-    <!--// LOGO and NAV -->
-    <section class="header">
-      <a href ="index.php"><img src="../../media/Logo2.png" class="logo"></a>
-      <nav>
-          
-          <div class="navbar">
-          <ul>
-              <li><a href="index.php">HOME</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-          </ul>
-      </div>
-      </nav>
+<body>
 
-      <div class="iframe-container">
-          <iframe width="460" height="215" src="https://www.youtube.com/embed/8g18jFHCLXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
+  <header>
+    <h1>🌝 Lunardo Booking Page</h1>
+  </header>
 
-    <section>
-
-      <div class="info-container">
-        <div class="info-header">  
-          <h2>Enter Personal Information</h2>
-        </div>
-
-        <form class ="form" id="form">
-          <div class="personalInfo success">
-            <label>Name</label>
-            <input type="text" placeholder="Name" id="username">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-
-          <div class="personalInfo error">
-            <label>Phone</label>
-            <input type="text" placeholder="Phone" id="phone">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-
-          <div class="personalInfo">
-            <label>Email</label>
-            <input type="email" placeholder="email@email.com" id="email">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-
-
-        </div>
-        </form>
-      </div>
-    </section>
-
-    <section>
-      <div class="info-container">
-      <h2 class="info-header">Select Session Time</h2>
-      </div>
-      <div class="radio-container">
-      <div class="radio">
-        <input class="radio__input" type="radio" value="option1" name="myRadio" id="myRadio1">
-        <label class="radio__label" for="myRadio1">MON 9 PM</label>
-         <input class="radio__input" type="radio" value="option2" name="myRadio" id="myRadio2">
-        <label class="radio__label" for="myRadio2">TUE 9 PM</label>
-         <input class="radio__input" type="radio" value="option3" name="myRadio" id="myRadio3">
-        <label class="radio__label" for="myRadio3">WED 9 PM</label>
-         <input class="radio__input" type="radio" value="option4" name="myRadio" id="myRadio4">
-        <label class="radio__label" for="myRadio4">THU 9 PM</label>
-         <input class="radio__input" type="radio" value="option5" name="myRadio" id="myRadio5">
-        <label class="radio__label" for="myRadio5">FRI 9 PM</label>
-         <input class="radio__input" type="radio" value="option6" name="myRadio" id="myRadio6">
-        <label class="radio__label" for="myRadio6">SAT 6 PM</label>
-         <input class="radio__input" type="radio" value="option7" name="myRadio" id="myRadio7">
-        <label class="radio__label" for="myRadio7">SUN 6 PM</label>
-      </div>
-      </div>
-    </section>
-
-
-    <section>
-      <div class="info-container">
-      <h2 class="info-header">Ticket Selection</h2>
-      </div>
-      <div class="bookings-row">
-      <div class="booking-col">
-        <h3>Ticket Type</h3>
-        <p>Standard Adult</p>
-        <p>Standard Consession</p>
-        <p>Standard Child</p>
-        <p>First Class Adult</p>
-        <p>First Class Consession</p>
-        <p>First Class Child</p>
-      </div>
-
-      <div class="booking-col">
-      <h3>Discount Price</h3>
-      <p>$15.00</p>
-      <p>$13.50</p>
-      <p>$12.00</p>
-      <p>$24.00</p>
-      <p>$22.50</p>
-      <p>$21.00</p>
-    </div>
-
-      <div class="booking-col">
-      <h3>Normal Price</h3>
-      <p>$20.50</p>
-      <p>$18.00</p>
-      <p>$16.50</p>
-      <p>$30.00</p>
-      <p>$27.00</p>
-      <p>$24.00</p>
-    </div>
-
-
-    <div class="booking-col">
-      <h3>Qty Required</h3>
-      <span class="ticket-quantity">
-          <input type="text" id="0001" class="quantity" name="ticket-0001;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-      <span class="ticket-quantity">
-          <input type="text" id="0002" class="quantity" name="ticket-0002;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-      <span class="ticket-quantity">
-          <input type="text" id="0003" class="quantity" name="ticket-0003;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-      <span class="ticket-quantity">
-          <input type="text" id="0004" class="quantity" name="ticket-0004;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-      <span class="ticket-quantity">
-          <input type="text" id="0005" class="quantity" name="ticket-0005;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-      <span class="ticket-quantity">
-          <input type="text" id="0006" class="quantity" name="ticket-0006;" value="0"
-            autocomplete="off" tabindex="1" min="0" max="10">
-      </span>
-
-    </div>
-    </section>
-
-    <section>
-      <form>
-      <div class="final-bookbtn">
-       <a><button class="bookbtn">Confirm Booking</button></a>
-      </div>
-    </form>
-    </section>
-
-    <footer>
-    <div class="row">
-      <div class="col">
-          <p>GITHUB LINK</p>
-        <a href="https://github.com/s3727884/wp.git" target="blank"><img src="../../media/GitHubLogo.png" class="gitlogo"></a>
-          <p>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</p>
-      </div>
-      <div class="col">
-          <h3 id="contact">Contact</h3>
-          <p>1500 That Drive</p>
-          <p>No-the-other-Steet, TheMoon</p>
-          <p>FirstCrater, SecondFootstep, Luna</p>
-          <p class="email-id">thelunardocinema@cinema.com.moon</p>
-          <h4>Phone: 1300 goodluck calling</h4>
-      </div>
-      <div class="col">
-          <h3>Links</h3>
-          <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="index.php#about">ABOUT</a></li>
-            <li><a href="booking.php">BOOKINGS</a></li>
-            <li><a href="index.php#nowshowing">NOW SHOWING</a></li>
-            <li><a href="index.php#seatspricing">SEATS & PRICING</a></li>
-          </ul>
-      </div>
-
-      <div class="col">
-          <h3>Required Info</h3>
-          
-          <div>&copy;<script>
-            document.write(new Date().getFullYear());
-          </script> Evert Visser, S3727884, Group 1. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-          <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-      </div>
-   </div>
   <hr>
-  <p class="copyright">Evert Visser © 2022 - All Rights Reserved</p>
-</footer>
-<script src="./script.js"></script>
-    <aside id="debug">
-      <hr>
-      <h3>Debug Area</h3>
-      <pre>
-GET Contains:
-<?php print_r($_GET) ?>
-POST Contains:
-<?php print_r($_POST) ?>
-SESSION Contains:
-<?php print_r($_SESSION) ?>
-      </pre>
-    </aside>
 
+  <nav><a href="booking.php?movie=<?= $movie ?>">Booking Page</a></nav>
 
- 
-  </body>
+  <hr>
 
+  <main>
+
+    <h2>Movie Selection</h2>
+
+    <p>Movie Title: <?= $moviesObject[$movie]['title'] ?></p>
+    <p>Rating: <?= $moviesObject[$movie]['rating'] ?></p>
+    <p>Genre: <?= $moviesObject[$movie]['genre'] ?></p>
+    <p>Plot: <?= $moviesObject[$movie]['plot'] ?></p>
+    <p>IMDB Link: <a href='https://www.imdb.com/title/<?= $moviesObject[$movie]['imdb'] ?>/' target="_blank">More about <?= $moviesObject[$movie]['title'] ?> over at IMDB</a></p>
+    <p>Screening Times: <?= $moviesObject[$movie]['screening-summary'] ?></p>
+
+    <hr>
+
+    <h2>Booking Form</h2>
+
+    <form action="booking.php?movie=<?= $movie ?>" method='POST'>
+
+      <input type="hidden" id="movie" name="movie" value="<?= $movie ?>" />
+
+      <fieldset id="screening-set">
+        <legend>Screenings</legend>
+        <?php
+          foreach($moviesObject[$movie]['screenings'] as $day => $details) {
+            echo "<label><input type='radio' id='$day' name='day' value='$day' />
+         $day {$details['time']} ({$details['rate']})</label>";
+          }
+        ?>
+      </fieldset>
+
+      <fieldset id="seating-set">
+        <legend>Seating</legend>
+        <?php
+          foreach($seatsObject as $seat => $details) {
+            echo "<input type='text' name='seats[$seat]' id='{$seat}-qty' value='' placeholder='{$details['desc']}' pattern='[1-9]|10' /><br>";
+          }
+        ?>
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <input type='text' name="user[name]" id="name" value='' placeholder="Name" /><br>
+        <input type='email' name="user[email]" id="email" value='' placeholder="Email" /><br>
+        <input type='tel' name="user[mobile]" id="mobile" value='' placeholder="Mobile" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Submit Options</legend>
+        <button id="submitCS" name='submitCS'>Order<br>Client-Side Validation</button>
+        <button id="submitSS" name='submitSS'>Order<br>Server-Side Validation</button>
+      </fieldset>
+    </form>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    Assignment 4 Fallback Template for Web Programming SP4 2021
+    <pre>
+$movie <?= $movie ?>
+
+seatsObject contains:
+<?php print_r($seatsObject); ?>
+moviesObject contains:
+<?php print_r($moviesObject); ?>
+GET contains:
+<?php print_r($_GET); ?>
+POST contains:
+<?php print_r($_POST); ?>
+SESSION contains:
+<?php print_r($_SESSION); ?>
+    </pre>
+  </footer>
+</body>
 
 </html>
