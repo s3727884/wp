@@ -9,6 +9,8 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
     <script src='../wireframe.js'></script>
+    <script src="../script.js"></script>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="stylesheet" href="" class="post-validation php">
     
@@ -66,6 +68,9 @@
             <small>Error message</small>
           </div>
 
+          <div class="rememberForget">
+            <a><button class="rememberMe">Remember Me</button></a>
+          </div>
 
         </div>
         </form>
@@ -136,31 +141,60 @@
     <div class="booking-col">
       <h3>Qty Required</h3>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0001" class="quantity" name="ticket-0001;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0002" class="quantity" name="ticket-0002;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0003" class="quantity" name="ticket-0003;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0004" class="quantity" name="ticket-0004;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0005" class="quantity" name="ticket-0005;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
       <span class="ticket-quantity">
+        <button type="button" class="icon-minus">-</button>
           <input type="text" id="0006" class="quantity" name="ticket-0006;" value="0"
             autocomplete="off" tabindex="1" min="0" max="10">
+          </input>
+        <button type="button" class="icon-plus">+</button>
       </span>
 
     </div>
+
+    <div class="booking-col">
+      <h3>Subtotal</h3><br>
+      <p>0</p>
+      <p>0</p>
+      <p>0</p>
+      <p>0</p>
+      <p>0</p>
+      <p>0</p>
+    </div>
+
     </section>
 
     <section>
@@ -170,6 +204,8 @@
       </div>
     </form>
     </section>
+
+    
 
     <footer>
     <div class="row">
@@ -209,7 +245,7 @@
   <hr>
   <p class="copyright">Evert Visser © 2022 - All Rights Reserved</p>
 </footer>
-<script src="./script.js"></script>
+
     <aside id="debug">
       <hr>
       <h3>Debug Area</h3>
