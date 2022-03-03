@@ -184,29 +184,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Lunardo Booking Page</title>
-  <style>
-    body {
-      font-family: Arial;
-    }
-    fieldset {
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    button, input {
-      padding: 10px;
-      margin: 5px;
-    }
-    label {
-      display: inline-flex;
-      align-items: center;
-      border: 1px #999 solid;
-      border-radius: 10px;
-      padding: 5px 10px 5px 5px;
-      margin: 10px;
-      
-    }
-  </style>
+  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
   <script>
     var moviesObjectJS = <?= json_encode($moviesObject, JSON_PRETTY_PRINT) ?>;
     var seatsObjectJS = <?= json_encode($seatsObject, JSON_PRETTY_PRINT) ?>;
