@@ -249,6 +249,11 @@
         <input type='email' name="user[email]" id="email" value='' placeholder="Email" /><br>
         <input type='tel' name="user[mobile]" id="mobile" value='' placeholder="Mobile" />
       </fieldset>
+      
+      <fieldset>
+        <legend>Remember Me</legend>
+        <button id="Remember Me" name='rememberMe'>Remember Me</button>
+      </fieldset>
 
       <fieldset>
         <legend>Submit Options</legend>
