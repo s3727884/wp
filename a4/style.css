@@ -333,24 +333,207 @@ hr {
 
 /*------- bookings Page ------*/
 
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 50px;
+  bottom: 10%;
+  width: 70%;
+  height: 70%;
+}
 
-  body {
-      font-family: Arial;
-    }
-    fieldset {
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    button, input {
-      padding: 10px;
-      margin: 5px;
-    }
-    label {
-      display: inline-flex;
-      align-items: center;
-      border: 1px #999 solid;
-      border-radius: 10px;
-      padding: 5px 10px 5px 5px;
-      margin: 10px;
-      
-    }
+.info-container {
+  background-color: #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  max-width: 100%;
+  padding: 10px 20px;
+}
+
+.info-header {
+  background-color: #8c8d99;
+  align-items: left;
+  padding-left: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+.form {
+  padding: 30px 40px;
+}
+
+.personalInfo {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.personalInfo label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.personalInfo input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-family: inherit;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  width: 50%;
+}
+.personalInfo input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.personalInfo.success input {
+  border-color: #2ecc71;
+}
+
+.personalInfo.error input {
+  border-color: #e74c3c;
+}
+.personalInfo.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.personalInfo.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.personalInfo.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.personalInfo i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.personalnfo small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ticket-quantity {
+  display: flex;
+  text-align: center;
+  background-color: white;
+  width: 0.05em;
+  height: 2em;
+  padding-bottom: 5px;
+}
+
+.radio-container {
+  padding-left: 65px;
+}
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.19);
+}
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  padding: 20px 14px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #3d405b;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.radio__label:not(:last-of-type) {
+  border-right: 1px solid #00093c;
+}
+
+.radio__input:checked + .radio__label {
+  background: #00093c;
+}
+
+@media screen and (max-width: 700px) {
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.booking-col p {
+  padding-bottom: 1em;
+}
+.quantity {
+  text-align: center;
+  font-size: 15px;
+}
+.booking-col {
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.booking-col h3 {
+  width: 20%;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.booking-col:nth-child(2),
+.booking-col:nth-child(3) {
+  flex-basis: 10%;
+}
+
+.bookings-row {
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-color: #3d405b;
+  border-style: dotted;
+  padding: 1em;
+  background-color: #81b29a;
+  border-radius: 5px;
+}
+
+.final-bookbtn {
+  align-content: center;
+  padding-top: 25px;
+  padding-left: 65px;
+  padding-bottom: 25px;
+}
+.bookbtn {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding-bottom: 10px;
+  padding: 5px 34px;
+  font-size: 26px;
+  background-color: #3d405b;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+.bookbtn:hover {
+  background-color: rgb(233, 127, 127);
+}
