@@ -1,3 +1,11 @@
+let btnSaveDetails = document.querySelector("rememberForget");
+
+function changeBtnText(e) {
+  e.preventDefault();
+  btn.innerText = "Forget Me";
+}
+btnSaveDetails.onclick = changeBtnText;
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .navbar ul li");
 
