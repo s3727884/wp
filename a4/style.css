@@ -537,3 +537,24 @@ hr {
 .bookbtn:hover {
   background-color: rgb(233, 127, 127);
 }
+
+  body {
+      font-family: Arial;
+    }
+    fieldset {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    button, input {
+      padding: 10px;
+      margin: 5px;
+    }
+    label {
+      display: inline-flex;
+      align-items: center;
+      border: 1px #999 solid;
+      border-radius: 10px;
+      padding: 5px 10px 5px 5px;
+      margin: 10px;
+      
+    }
